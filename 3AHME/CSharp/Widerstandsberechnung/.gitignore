@@ -1,0 +1,9 @@
+.vs/
+logs/
+App.config
+Properties/
+Widerstandsberechnung.csproj
+Widerstandsberechnung.pdf
+Widerstandsberechnung.sln
+bin/
+obj/
