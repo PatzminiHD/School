@@ -13,6 +13,7 @@
 		<Item Name="220401_Basic1.vi" Type="VI" URL="../220401_Basic1.vi"/>
 		<Item Name="220407_Basic2.vi" Type="VI" URL="../220407_Basic2.vi"/>
 		<Item Name="220506_Basic3.vi" Type="VI" URL="../220506_Basic3.vi"/>
+		<Item Name="220624_TempCalc.vi" Type="VI" URL="../SubVI/220624_TempCalc.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Less Comparable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Comparable/Less Comparable.lvclass"/>
