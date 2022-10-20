@@ -12,7 +12,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="221006_Pt100_Kennlinie.vi" Type="VI" URL="../221006_Pt100_Kennlinie.vi"/>
-			<Item Name="221013_CreateRInOhm.vi" Type="VI" URL="/C/Users/OliverBleen/Downloads/220929/221013_CreateRInOhm.vi"/>
+			<Item Name="221013_CreateRInOhm.vi" Type="VI" URL="../221013_CreateRInOhm.vi"/>
 		</Item>
 		<Item Name="220929_MathNode.vi" Type="VI" URL="../220929_MathNode.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
