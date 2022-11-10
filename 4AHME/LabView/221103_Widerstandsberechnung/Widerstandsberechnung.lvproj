@@ -15,6 +15,7 @@
 			<Item Name="Parallelschaltung.vi" Type="VI" URL="../Parallelschaltung.vi"/>
 			<Item Name="Serienschaltung.vi" Type="VI" URL="../Serienschaltung.vi"/>
 		</Item>
+		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
