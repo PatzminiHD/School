@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{265FAB56-6697-4C86-9E2E-549617B0A92F}</ProjectGuid>
+    <ProjectGuid>{16F913AD-AA4C-44E7-A6B5-8451B11696C4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_01_Linear_Interpolation</RootNamespace>
-    <AssemblyName>Template_WS21_2AHME-G1</AssemblyName>
+    <RootNamespace>_231006_Linear_Interpolation</RootNamespace>
+    <AssemblyName>231006_Linear_Interpolation</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

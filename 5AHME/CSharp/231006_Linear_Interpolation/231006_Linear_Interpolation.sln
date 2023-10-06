@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Linear_Interpolation", "01_Linear_Interpolation.csproj", "{265FAB56-6697-4C86-9E2E-549617B0A92F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "231006_Linear_Interpolation", "231006_Linear_Interpolation.csproj", "{16F913AD-AA4C-44E7-A6B5-8451B11696C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{265FAB56-6697-4C86-9E2E-549617B0A92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{265FAB56-6697-4C86-9E2E-549617B0A92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{265FAB56-6697-4C86-9E2E-549617B0A92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{265FAB56-6697-4C86-9E2E-549617B0A92F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F913AD-AA4C-44E7-A6B5-8451B11696C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F913AD-AA4C-44E7-A6B5-8451B11696C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F913AD-AA4C-44E7-A6B5-8451B11696C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F913AD-AA4C-44E7-A6B5-8451B11696C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4E7967FB-7CEC-4542-9D1F-1D2FB241607C}
+		SolutionGuid = {CEB0DD87-B3AE-46D3-A83E-D5C74DACE62A}
 	EndGlobalSection
 EndGlobal

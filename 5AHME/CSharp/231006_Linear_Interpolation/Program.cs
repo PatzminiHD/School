@@ -1,11 +1,11 @@
 ﻿//*********************************************************************************************
-//  Project:    _01_Linear_Interpolation
-//  Namespace:  _01_Linear_Interpolation
+//  Project:    _231006_Linear_Interpolation
+//  Namespace:  _231006_Linear_Interpolation
 //  Path:       E:\School\AIIT\5AHME\CSharp\
 //  File:       Program.cs
 // --------------------------------------------------------------------------------------------
-//  Date:       10/6/2023 12:02:01 PM
-//  Username:	PatzminiHD
+//  Date:       10/6/2023 12:15:14 PM
+//  Username:	OliverBleen
 //  Developer:  <PatzminiHD>
 // --------------------------------------------------------------------------------------------
 //  Machine:	DESKTOP-UIJDDHM
@@ -21,7 +21,7 @@
 // 
 // --------------------------------------------------------------------------------------------
 //  Date:                       Author:                     Reason for Change
-//  10/6/2023 12:02:01 PM       <PatzminiHD>                Creation of project ....
+//  10/6/2023 12:15:14 PM                      <PatzminiHD>                Creation of project ....
 //*********************************************************************************************
 
 // ----------------------------- using Directives to include different namespaces -------------
@@ -34,7 +34,7 @@ using System.Threading.Tasks;
 
 //  -------------------------------------------- START -----------------------------------------
 
-namespace _01_Linear_Interpolation
+namespace _231006_Linear_Interpolation
 {
     internal class Program
     {
@@ -48,14 +48,14 @@ namespace _01_Linear_Interpolation
             //	-----------------------------------------------
             //	Setups
             //	-----------------------------------------------
-            Console.Title = "_01_Linear_Interpolation";
+            Console.Title = "_231006_Linear_Interpolation";
             Console.ForegroundColor = ConsoleColor.Green;
 
             //	-----------------------------------------------
             //	Definition of variables & data structures
             //	-----------------------------------------------
 
-
+            
 
 
             //	-----------------------------------------------
