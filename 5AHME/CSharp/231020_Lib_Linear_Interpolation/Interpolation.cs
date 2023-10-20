@@ -74,8 +74,104 @@ namespace _231020_Lib_Linear_Interpolation
         //Contructors
         //===========
 
+        /// <summary>
+        /// Default Constructor without parameters
+        /// </summary>
+        public Interpolation() { }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="x1"></param>
+        /// <param name="y1"></param>
+        /// <param name="x2"></param>
+        /// <param name="y2"></param>
+        /// <param name="x"></param>
+        public Interpolation(double x1, double y1, double x2, double y2, double x)
+        {
+            this.X1 = x1;
+            this.Y1 = y1;
+            this.X2 = x2;
+            this.Y2 = y2;
+            this.X = x;
+        }
+
         //=======
         //Methods
         //=======
+
+        /// <summary>
+        /// Calculate the Slope for the given points
+        /// </summary>
+        /// <returns>The slope as a double</returns>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        public double Slope()
+        {
+            //If x1 and x2 are equal
+            if (this._dx1 == this._dx2)
+                //Throw 
+                throw new ArgumentOutOfRangeException("X1 is equal to X2");
+
+            //If x is not between x1 and x2
+            if (this._dx1 > this._dx || this._dx > this._dx2)
+            {
+                //Swap point 1 and point 2
+                double tmp = this._dx1;
+                this._dx1 = this._dx2;
+                this._dx2 = tmp;
+
+                tmp = this._dy1;
+                this._dy1 = this._dy2;
+                this._dy2 = tmp;
+
+                //Is x is still not between swapped x1 and x2
+                if (this._dx1 > this._dx || this._dx > this._dx2)
+                    //Throw exception
+                    throw new ArgumentOutOfRangeException("X does not lie between X1 and X2");
+            }
+
+            return (this._dy2 - this._dy1) / (this._dx2 - this._dx1);
+        }
+
+        /// <summary>
+        /// Calculate the offset of the interpolated line of the given points
+        /// </summary>
+        /// <returns>The offset as a double</returns>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        public double Intersect()
+        {
+            if (this._dx1 == this._dx2)
+                throw new ArgumentOutOfRangeException("X1 is equal to X2");
+
+            //If x is not between x1 and x2
+            if (this._dx1 > this._dx || this._dx > this._dx2)
+            {
+                //Swap point 1 and point 2
+                double tmp = this._dx1;
+                this._dx1 = this._dx2;
+                this._dx2 = tmp;
+
+                tmp = this._dy1;
+                this._dy1 = this._dy2;
+                this._dy2 = tmp;
+
+                //Is x is still not between swapped x1 and x2
+                if (this._dx1 > this._dx || this._dx > this._dx2)
+                    //Throw exception
+                    throw new ArgumentOutOfRangeException("X does not lie between X1 and X2");
+            }
+
+            return this._dy1 - (Slope() * this._dx1);
+        }
+
+        /// <summary>
+        /// Calculate the Y value for the given points and x value
+        /// </summary>
+        /// <returns>The Y value as a double</returns>
+        public double Y()
+        {
+            return Slope() * this._dx + Intersect();
+        }
     }
 }
