@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="231020_Lib_Linear_Interpolation">
+      <HintPath>..\231020_Lib_Linear_Interpolation\bin\Debug\231020_Lib_Linear_Interpolation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
