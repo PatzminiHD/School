@@ -56,20 +56,73 @@ namespace _231020_Linear_Interpolation_with_Lib
             //	Definition of variables & data structures
             //	-----------------------------------------------
 
-
+            string sX1, sY1, sX2, sY2, sX;
+            double dX1, dY1, dX2, dY2;
+            double dX;
+            string sCancel;
+            Interpolation Calculate = new Interpolation();
 
 
             //	-----------------------------------------------
             //	Instructions & Procedures
             //	-----------------------------------------------
 
+            while (true)
+            {
+                Console.Clear();
+                Console.Write("Input the X Value of the lower Point: ");
+                sX1 = Console.ReadLine();
+                Console.Write("Input the Y Value of the lower Point: ");
+                sY1 = Console.ReadLine();
+                Console.Write("Input the X Value of the upper Point: ");
+                sX2 = Console.ReadLine();
+                Console.Write("Input the Y Value of the upper Point: ");
+                sY2 = Console.ReadLine();
+                Console.Write("Input the X Value to interpolate: ");
+                sX = Console.ReadLine();
 
+                if(double.TryParse(sX1, out dX1) && 
+                   double.TryParse(sX2, out dX2) &&
+                   double.TryParse(sY1, out dY1) &&
+                   double.TryParse(sY2, out dY2) &&
+                   double.TryParse(sX,  out dX))
+                {
+                    try
+                    {
+                        Calculate.X1 = dX1;
+                        Calculate.Y1 = dY1;
+                        Calculate.X2 = dX2;
+                        Calculate.Y2 = dY2;
+                        Calculate.X = dX;
 
-            //	-----------------------------------------------
-            //	Programm-Ende
-            //	-----------------------------------------------
-            Console.WriteLine("\n\n\tENTER => Programm-Ende\n\n");
-            Console.Read();
+                        Console.WriteLine($"\n\tSlope k :                 {Calculate.Slope():F2}" +
+                                          $"\n\tIntersect d:              {Calculate.Intersect():F2}" +
+                                          $"\n\tInterpolated Point (X/Y): ({dX:F2}/{Calculate.Y():F2})");
+                    }
+                    catch(Exception e)
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine(e);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("One of the inputs was not valid!");
+                }
+
+                do
+                {
+                    //	-----------------------------------------------
+                    //	Programm-Ende
+                    //	-----------------------------------------------
+                    Console.WriteLine("\n\n\tExit Program? (Y/N)\n\n");
+                    sCancel = Console.ReadLine().ToUpper();
+                }
+                while (sCancel != "Y" && sCancel != "N");
+                
+                if (sCancel == "Y")
+                    break;
+            }
 
         }   // --> end of main	
 
