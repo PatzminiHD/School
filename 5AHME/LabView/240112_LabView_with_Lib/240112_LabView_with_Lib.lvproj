@@ -11,7 +11,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="240112_LabView_with_Lib.vi" Type="VI" URL="../240112_LabView_with_Lib.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="231020_Lib_Linear_Interpolation.dll" Type="Document" URL="../231020_Lib_Linear_Interpolation.dll"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
