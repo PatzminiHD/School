@@ -98,6 +98,26 @@ namespace _231020_Linear_Interpolation_with_Lib
                         Console.WriteLine($"\n\tSlope k :                 {Calculate.Slope():F2}" +
                                           $"\n\tIntersect d:              {Calculate.Intersect():F2}" +
                                           $"\n\tInterpolated Point (X/Y): ({dX:F2}/{Calculate.Y():F2})");
+
+                        //Object Initialiser - Properties are given directly at object initialisation
+                        //ONLY WORKS WITH STANDARD CONSTRUCTOR
+                        Interpolation Calculate01 = new Interpolation()
+                        {
+                            X1 = 2.5,
+                            Y1 = 2.5,
+                            X2 = 4.5,
+                            Y2 = 8,
+                            X  = 3,
+                        };
+
+                        Console.WriteLine($"\n\tSlope k :                 {Calculate01.Slope():F2}" +
+                                          $"\n\tIntersect d:              {Calculate01.Intersect():F2}" +
+                                          $"\n\tInterpolated Point (X/Y): ({Calculate01.X:F2}/{Calculate01.Y():F2})");
+
+                        Interpolation Calculate02 = new Interpolation(6, 6, 10.5, 11, 8);
+                        Console.WriteLine($"\n\tSlope k :                 {Calculate02.Slope():F2}" +
+                                          $"\n\tIntersect d:              {Calculate02.Intersect():F2}" +
+                                          $"\n\tInterpolated Point (X/Y): ({Calculate02.X:F2}/{Calculate02.Y():F2})");
                     }
                     catch(Exception e)
                     {

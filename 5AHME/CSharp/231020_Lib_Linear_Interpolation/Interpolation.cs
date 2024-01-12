@@ -81,13 +81,13 @@ namespace _231020_Lib_Linear_Interpolation
 
 
         /// <summary>
-        /// 
+        /// Special Constructor with parameters
         /// </summary>
-        /// <param name="x1"></param>
-        /// <param name="y1"></param>
-        /// <param name="x2"></param>
-        /// <param name="y2"></param>
-        /// <param name="x"></param>
+        /// <param name="x1">x1 - left interpolation point</param>
+        /// <param name="y1">y1 - left interpolation point</param>
+        /// <param name="x2">x2 - right interpolation point</param>
+        /// <param name="y2">y2 - right interpolation point</param>
+        /// <param name="x">x - point to be interpolated</param>
         public Interpolation(double x1, double y1, double x2, double y2, double x)
         {
             this.X1 = x1;
