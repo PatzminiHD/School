@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>231020_Lib_Linear_Interpolation</name>
+    </assembly>
+    <members>
+        <member name="T:_231020_Lib_Linear_Interpolation.Interpolation">
+            <summary>
+            This Lib can be used for linear interpolation between two given points
+            </summary>
+        </member>
+        <member name="F:_231020_Lib_Linear_Interpolation.Interpolation._dx1">
+            <summary>
+            Properties of the library
+            </summary>
+        </member>
+        <member name="P:_231020_Lib_Linear_Interpolation.Interpolation.X1">
+            <summary>
+            X1 - left interpolation point
+            </summary>
+        </member>
+        <member name="P:_231020_Lib_Linear_Interpolation.Interpolation.Y1">
+            <summary>
+            Y1 - left interpolation point
+            </summary>
+        </member>
+        <member name="P:_231020_Lib_Linear_Interpolation.Interpolation.X2">
+            <summary>
+            X2 - right interpolation point
+            </summary>
+        </member>
+        <member name="P:_231020_Lib_Linear_Interpolation.Interpolation.Y2">
+            <summary>
+            Y2 - right interpolation point
+            </summary>
+        </member>
+        <member name="P:_231020_Lib_Linear_Interpolation.Interpolation.X">
+            <summary>
+            X - point to be interpolated
+            </summary>
+        </member>
+        <member name="M:_231020_Lib_Linear_Interpolation.Interpolation.#ctor">
+            <summary>
+            Default Constructor without parameters
+            </summary>
+        </member>
+        <member name="M:_231020_Lib_Linear_Interpolation.Interpolation.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Special Constructor with parameters
+            </summary>
+            <param name="x1">x1 - left interpolation point</param>
+            <param name="y1">y1 - left interpolation point</param>
+            <param name="x2">x2 - right interpolation point</param>
+            <param name="y2">y2 - right interpolation point</param>
+            <param name="x">x - point to be interpolated</param>
+        </member>
+        <member name="M:_231020_Lib_Linear_Interpolation.Interpolation.Slope">
+            <summary>
+            Calculate the Slope for the given points
+            </summary>
+            <returns>The slope as a double</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:_231020_Lib_Linear_Interpolation.Interpolation.Intersect">
+            <summary>
+            Calculate the offset of the interpolated line of the given points
+            </summary>
+            <returns>The offset as a double</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:_231020_Lib_Linear_Interpolation.Interpolation.Y">
+            <summary>
+            Calculate the Y value for the given points and x value
+            </summary>
+            <returns>The Y value as a double</returns>
+        </member>
+    </members>
+</doc>
