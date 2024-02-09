@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _05_Lib_Vererbung
+namespace _240126_Lib_Inherit
 {
     public class Slope
     {
@@ -102,7 +102,7 @@ namespace _05_Lib_Vererbung
         /// </summary>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public double slope()
+        public double CalcSlope()
         {
             return ((_dy2 - _dy1) / (_dx2 - _dx1));
 
@@ -113,7 +113,7 @@ namespace _05_Lib_Vererbung
         /// <returns></returns>
         public double intercept()
         {
-            return (_dy1 - _dx1 * slope());
+            return (_dy1 - _dx1 * CalcSlope());
         }
 
     }
@@ -155,7 +155,7 @@ namespace _05_Lib_Vererbung
         /// <returns></returns>
         public double Y()
         {
-            return (slope() * _dx + intercept());
+            return (CalcSlope() * _dx + intercept());
         }
 
     }
