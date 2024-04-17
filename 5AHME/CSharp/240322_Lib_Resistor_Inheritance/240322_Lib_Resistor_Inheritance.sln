@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "240322_Lib_Resistor_Inheritance", "240322_Lib_Resistor_Inheritance\240322_Lib_Resistor_Inheritance.csproj", "{FD704B19-6672-46C9-A998-074CBB23655C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "240322_Use_Lib_Resistor_Inheritance", "240322_Use_Lib_Resistor_Inheritance\240322_Use_Lib_Resistor_Inheritance.csproj", "{5D100FF6-2060-47FA-A0EA-83EF3E2806AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD704B19-6672-46C9-A998-074CBB23655C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD704B19-6672-46C9-A998-074CBB23655C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD704B19-6672-46C9-A998-074CBB23655C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD704B19-6672-46C9-A998-074CBB23655C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D100FF6-2060-47FA-A0EA-83EF3E2806AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D100FF6-2060-47FA-A0EA-83EF3E2806AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D100FF6-2060-47FA-A0EA-83EF3E2806AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D100FF6-2060-47FA-A0EA-83EF3E2806AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61AC5FE3-7B09-4DF7-8ABB-9168A07CE691}
+	EndGlobalSection
+EndGlobal
